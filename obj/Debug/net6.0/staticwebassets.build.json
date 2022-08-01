@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9m+lnx6agjyi4N8UHZppwtiLcz+ZPOU154VXFd/ZFa4=",
+  "Hash": "X6E6X5jXnbzoMGDclO6eSShusXIvXC7jjrIRO8BTF+c=",
   "Source": "GoogleAuthentication",
   "BasePath": "_content/GoogleAuthentication",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\vinaysingh\\MVC PROJECT\\Google Auth\\GoogleAuthentication\\GoogleAuthentication\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GoogleAuthentication.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\vinaysingh\\MVC PROJECT\\Google Auth\\GoogleAuthentication\\GoogleAuthentication\\wwwroot\\css\\main.css",
+      "SourceId": "GoogleAuthentication",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\vinaysingh\\MVC PROJECT\\Google Auth\\GoogleAuthentication\\GoogleAuthentication\\wwwroot\\",
+      "BasePath": "_content/GoogleAuthentication",
+      "RelativePath": "css/main.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\main.css"
     },
     {
       "Identity": "D:\\vinaysingh\\MVC PROJECT\\Google Auth\\GoogleAuthentication\\GoogleAuthentication\\wwwroot\\css\\site.css",

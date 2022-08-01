@@ -6,6 +6,10 @@ D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\
 D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\bin\Debug\net6.0\GoogleAuthentication.runtimeconfig.json
 D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\bin\Debug\net6.0\GoogleAuthentication.dll
 D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\bin\Debug\net6.0\GoogleAuthentication.pdb
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\bin\Debug\net6.0\Facebook.dll
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\bin\Debug\net6.0\System.Security.Permissions.dll
 D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Debug\net6.0\GoogleAuthentication.csproj.AssemblyReference.cache
 D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Debug\net6.0\GoogleAuthentication.GeneratedMSBuildEditorConfig.editorconfig
 D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Debug\net6.0\GoogleAuthentication.AssemblyInfoInputs.cache
@@ -19,11 +23,11 @@ D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\
 D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Debug\net6.0\scopedcss\bundle\GoogleAuthentication.styles.css
 D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Debug\net6.0\scopedcss\projectbundle\GoogleAuthentication.bundle.scp.css
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Debug\net6.0\GoogleAuthentication.csproj.CopyComplete
 D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Debug\net6.0\GoogleAuthentication.dll
 D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Debug\net6.0\refint\GoogleAuthentication.dll
 D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Debug\net6.0\GoogleAuthentication.pdb
 D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Debug\net6.0\GoogleAuthentication.genruntimeconfig.cache
 D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Debug\net6.0\ref\GoogleAuthentication.dll
-D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
-D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\bin\Debug\net6.0\System.Security.Permissions.dll
-D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Debug\net6.0\GoogleAuthentication.csproj.CopyComplete
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\bin\Debug\net6.0\GoogleTranslateFreeApi.dll
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\bin\Debug\net6.0\Newtonsoft.Json.dll

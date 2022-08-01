@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Facebook;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Text;
 
 namespace GoogleAuthentication.Controllers
 {
@@ -12,10 +14,16 @@ namespace GoogleAuthentication.Controllers
         [Route("google-login")]
         public IActionResult GoogleLogin()
         {
-            var properties = new AuthenticationProperties { RedirectUri = Url.Action("GoogleResponse") };
+            var properties = new AuthenticationProperties { RedirectUri = Url.Action("response") };
             return Challenge(properties,GoogleDefaults.AuthenticationScheme);
         }
-        [Route("google-response")]
+        [Route("facebook-login")]
+        public IActionResult FacebookLogin()
+        {
+            var properties = new AuthenticationProperties { RedirectUri = Url.Action("response") };
+            return Challenge(properties, FacebookDefaults.AuthenticationScheme);
+        }
+        [Route("response")]
         public async Task<IActionResult> GoogleResponse()
         {
             var result= await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
@@ -29,5 +37,7 @@ namespace GoogleAuthentication.Controllers
             return Json(claims);
 
         }
+        
+       
     }
 }

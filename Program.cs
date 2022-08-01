@@ -11,12 +11,17 @@ builder.Services.AddAuthentication(options =>
     options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
 }).AddCookie(options =>
 {
-    options.LoginPath = "/account/google-login";
+   // options.LoginPath = "/account/google-login";
+    //options.LoginPath = "/account/facebook-login";
 }).AddGoogle(options =>
 {
-    options.ClientId = "316173658884-7u9drauepd361pnoebbofmpt6v4ufvrj.apps.googleusercontent.com";
-    options.ClientSecret = "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";
+    options.ClientId = builder.Configuration["GoogleApi"];
+    options.ClientSecret = builder.Configuration["GoogleSecretKey"];
 
+}).AddFacebook(options =>
+{
+    options.ClientId = builder.Configuration["FacebookAppId"] ;
+    options.ClientSecret = builder.Configuration["FacebookAppsecret"];
 });
 
 var app = builder.Build();

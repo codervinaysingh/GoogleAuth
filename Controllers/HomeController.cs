@@ -5,7 +5,7 @@ using System.Diagnostics;
 
 namespace GoogleAuthentication.Controllers
 {
-    [Authorize]
+  //  [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -31,5 +31,6 @@ namespace GoogleAuthentication.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+       
     }
 }
