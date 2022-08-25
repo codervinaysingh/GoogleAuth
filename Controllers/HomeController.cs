@@ -5,7 +5,7 @@ using System.Diagnostics;
 
 namespace GoogleAuthentication.Controllers
 {
-  //  [Authorize]
+  [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -15,8 +15,18 @@ namespace GoogleAuthentication.Controllers
         {
             _logger = logger;
         }
-        //[AllowAnonymous]
+        [AllowAnonymous]
         public IActionResult Index()
+        {
+            if (!string.IsNullOrEmpty(Request.QueryString.Value))
+            {
+                return RedirectToAction("Login");
+            }
+         
+            return View();
+        }
+        [AllowAnonymous]
+        public IActionResult Login()
         {
             return View();
         }
@@ -25,7 +35,7 @@ namespace GoogleAuthentication.Controllers
         {
             return View();
         }
-
+        [AllowAnonymous]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

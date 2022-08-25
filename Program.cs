@@ -1,18 +1,20 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
+using GoogleAuthentication.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddSignalR();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 // Goolge Login 
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
 }).AddCookie(options =>
 {
-   // options.LoginPath = "/account/google-login";
-    //options.LoginPath = "/account/facebook-login";
+    options.LoginPath ="/home" ;
+   // options.LoginPath = "/account/facebook-login";
 }).AddGoogle(options =>
 {
     options.ClientId = builder.Configuration["GoogleApi"];
@@ -22,6 +24,10 @@ builder.Services.AddAuthentication(options =>
 {
     options.ClientId = builder.Configuration["FacebookAppId"] ;
     options.ClientSecret = builder.Configuration["FacebookAppsecret"];
+});
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(25);
 });
 
 var app = builder.Build();
@@ -39,6 +45,8 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.UseSession();
+//Set Session Timeout. Default is 25 minutes.
 
 app.UseRouting();
 app.UseAuthentication();
@@ -48,4 +56,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.MapHub<ConectedHub>("/ConectedHub");
 app.Run();

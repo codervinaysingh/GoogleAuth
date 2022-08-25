@@ -1,0 +1,8 @@
+﻿
+@model GoogleAuthentication.ConnectedUsers;
+
+<div class="col-2"><h2>Online Users</h2></div>
+@foreach (var item in GoogleAuthentication.ConnectedUsers.AllUsers)
+{
+    <li>@item;</li>
+}

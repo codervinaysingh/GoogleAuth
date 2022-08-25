@@ -1,0 +1,14 @@
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Release\net6.0\PubTmp\Out\GoogleAuthentication.exe
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Release\net6.0\PubTmp\Out\libman.json
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Release\net6.0\PubTmp\Out\GoogleAuthentication.dll
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Release\net6.0\PubTmp\Out\GoogleAuthentication.deps.json
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Release\net6.0\PubTmp\Out\GoogleAuthentication.runtimeconfig.json
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Release\net6.0\PubTmp\Out\GoogleAuthentication.pdb
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Release\net6.0\PubTmp\Out\Facebook.dll
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Release\net6.0\PubTmp\Out\GoogleTranslateFreeApi.dll
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.Facebook.dll
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.Google.dll
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll
+D:\vinaysingh\MVC PROJECT\Google Auth\GoogleAuthentication\GoogleAuthentication\obj\Release\net6.0\PubTmp\Out\System.Security.Permissions.dll

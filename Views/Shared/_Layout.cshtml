@@ -1,11 +1,12 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http;
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - GoogleAuthentication</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-   <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/GoogleAuthentication.styles.css" asp-append-version="true" />
 </head>
@@ -26,21 +27,35 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Chat" asp-action="Index">Chat</a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="main-login">
-                <button class="login-button">Login</button>
-            <div class="main-login-content">
-                <a  asp-controller="Account" asp-action="GoogleLogin">Google</a>
-                <a asp-controller="Account" asp-action="FacebookLogin">Faceboook</a>
+                @if (Context.Session.GetString("UserId") == null)
+                {
+                    <button class="login-button">Login</button>
+                    <div class="main-login-content">
+                        <a asp-controller="Account" asp-action="GoogleLogin"><img class="logo-img" src="~/images/google.png" /> Google</a>
+                        <a asp-controller="Account" asp-action="FacebookLogin"><img class="logo-img" src="~/images/facebook.png" /> Faceboook</a>
+                    </div>
+                }
+                else
+                {
+                    <div class="main-login">
+                        <a asp-controller="Account" asp-action="Logout">
+                            <button class="logout-button">Logout</button>
+                        </a>
+                    </div>
+
+                }
+
+
             </div>
-             <div class="main-login" style=" display:none">
-                 <button class="logout-button">Logout</button>           
-                 </div>
-        </div>
         </nav>
-        
+
     </header>
     <div class="container">
         <main role="main" class="pb-3">
